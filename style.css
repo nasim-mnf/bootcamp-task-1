@@ -1,0 +1,136 @@
+/* resets */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  /* list-style-type: none; */
+}
+html {
+  font-size: 62.5%;
+}
+/* variables */
+:root {
+  --color-body: #1e1e1e;
+  --color-primary: #219f95;
+  --color-secondary: #afcedd;
+  --color-body-secondary: #234894;
+  --color-small-text: #696969;
+}
+/* fonts */
+body,
+.btn {
+  font-family: "vazir";
+}
+h1.panel-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+  color: var(--color-small-text);
+  font-weight: 400;
+}
+/* containers */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 2rem;
+  height: auto;
+}
+
+/* classes */
+
+.panel-items{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+}
+@media screen and (min-width: 500px) {
+  .panel-items{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .panel-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.panel-item{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  min-width: 200px;
+    height: auto;
+}
+.inline__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apload {
+  color: var(--color-body-secondary);
+}
+
+/* button */
+.btn {
+  color: #fff;
+  background-color: var(--color-primary);
+  padding: 1.5rem 1rem;
+  outline: 0;
+  border: 0;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+}
+.name ::before {
+  content: url(./assets/image/warren-wong-VVEwJJRRHgk\ 1.png);
+  width: 40px;
+  height: 40px;
+}
+.upload ::before {
+  content: url(./assets/image/num.png);
+  width: 40px;
+  height: 40px;
+}
+.number {
+  width: 30px;
+  height: 30px;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #0000 ;
+  background-color: var(--color-secondary);
+  color: var(--color-body-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-family: "vazir";
+  font-weight: bold;
+  margin-left: 1rem;
+  box-shadow: 0px 0px 1px 1px rgba(173, 174, 173, 0.247);
+}
+
+.apload-holder {
+  display: flex;
+  align-items: center;
+  max-width: 40%;
+  
+}
+.user-info{
+  display: flex;
+  max-width: 45%;
+  align-items: center;
+  gap: 1rem;
+}
+.user-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 0.8rem;
+}
